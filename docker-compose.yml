@@ -1,0 +1,9 @@
+services:
+  scrapyd:
+    image: dscrapyd
+    build: .
+    network_mode: host
+    volumes:
+      - ./scrapyd:/etc/scrapyd
+      - ./dbs:/scrapyd/dbs
+      - ./logs:/scrapyd/logs
