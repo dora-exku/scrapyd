@@ -1,6 +1,6 @@
 services:
   scrapyd:
-    image: dscrapyd
+    image: xin99/scrapyd
     build: .
     network_mode: host
     volumes:
